@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import GeneralNavbar from "../components/GeneralNavbar";
 import { Container } from "react-bootstrap";
+import Footer from "../components/Footer";
 
 const PrivacyPolicy = () => {
     const navigate = useNavigate();
@@ -613,6 +614,7 @@ const PrivacyPolicy = () => {
                     </li>
                 </ul>
             </Container>
+            <Footer/>
         </>
     );
 };

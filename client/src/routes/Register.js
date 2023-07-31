@@ -6,7 +6,7 @@ import { Row, Form, Button, Col, Image } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import GeneralNavbar from "../components/GeneralNavbar";
 import GoogleButton from "react-google-button";
-
+import Footer from "../components/Footer";
 ////Register page of our website
 //// registerUsername is the entered username by the user
 //// registerPassword is the entered password by the user
@@ -152,7 +152,7 @@ const Register = (props) => {
                 <title>Register</title>
             </Helmet>
             <GeneralNavbar />
-            <Row style={{ margin: "auto", width: "100%" }}>
+            <Row style={{ margin: "auto", width: "100%", minHeight: "85vh" }}>
                 <Col style={{ marginTop: "100px" }}>
                     <div>
                         <Form
@@ -329,6 +329,7 @@ const Register = (props) => {
                     </div>
                 </Col>
             </Row>
+            <Footer/>
         </>
     );
 };

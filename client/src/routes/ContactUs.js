@@ -6,6 +6,7 @@ import { Row, Form, Button, Col, Image } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import GeneralNavbar from "../components/GeneralNavbar";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 ////Register page of our website
 //// registerUsername is the entered username by the user
@@ -114,7 +115,7 @@ const ContactUs = (props) => {
             ) : (
                 <Navbar proprole={role} />
             )}
-            <Row style={{ margin: "auto", width: "100%" }}>
+            <Row style={{ margin: "auto", width: "100%", minHeight: "85vh" }}>
                 <Col style={{ marginTop: "100px" }}>
                     <div>
                         <Form
@@ -217,6 +218,7 @@ const ContactUs = (props) => {
                     </div>
                 </Col>
             </Row>
+            <Footer />
         </>
     );
 };

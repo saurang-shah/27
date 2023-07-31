@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import GeneralNavbar from "../components/GeneralNavbar";
 import { Container } from "react-bootstrap";
-
+import Footer from "../components/Footer";
 const Terms = () => {
     const navigate = useNavigate();
     const [role, setRole] = useState("unknown");
@@ -380,6 +380,7 @@ const Terms = () => {
                     liable for any loss or damage of any nature.
                 </p>
             </Container>
+            <Footer/>
         </>
     );
 };

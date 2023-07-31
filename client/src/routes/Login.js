@@ -6,6 +6,7 @@ import { Row, Form, Button, Col, Image } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import GeneralNavbar from "../components/GeneralNavbar";
 import GoogleButton from "react-google-button";
+import Footer from "../components/Footer";
 
 /////Login page of our website
 //// loginUsername is the entered username by the user
@@ -120,7 +121,7 @@ const Login = (props) => {
                 <title>Login</title>
             </Helmet>
             <GeneralNavbar />
-            <Row style={{ margin: "auto", width: "100%" }}>
+            <Row style={{ margin: "auto", width: "100%", minHeight: "85vh"}}>
                 <Col style={{ marginTop: "100px" }}>
                     <div>
                         <Form
@@ -258,6 +259,7 @@ const Login = (props) => {
                     </div>
                 </Col>
             </Row>
+            <Footer/>
         </>
     );
 };

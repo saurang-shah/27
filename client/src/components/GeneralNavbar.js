@@ -29,91 +29,9 @@ const GeneralNavbar = ({ proprole }) => {
     return (
         <MDBNavbar expand="lg" dark style={{ backgroundColor: "#28a745" }}>
             <MDBContainer fluid>
-                <MDBNavbarBrand onClick={() => navigate(`/`)}>
-                    <span style={{ fontWeight: "bold" }}>Fingo</span>
-                </MDBNavbarBrand>
-
-                <MDBNavbarToggler
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    onClick={() => setShowBasic(!showBasic)}>
-                    <MDBIcon icon="bars" fas />
-                </MDBNavbarToggler>
-
-                <MDBCollapse navbar show={showBasic}>
-                    <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
-                        <MDBNavbarItem>
-                            <MDBNavbarLink
-                                onClick={() => navigate(`/`)}
-                                style={{
-                                    fontWeight: "bold",
-                                    color: "#ffffff",
-                                    cursor: "pointer",
-                                }}>
-                                Home
-                            </MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink
-                                onClick={() => navigate(`/auth/login`)}
-                                style={{
-                                    fontWeight: "bold",
-                                    color: "#ffffff",
-                                    cursor: "pointer",
-                                }}>
-                                Login
-                            </MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink
-                                onClick={() => navigate(`/auth/register`)}
-                                style={{
-                                    fontWeight: "bold",
-                                    color: "#ffffff",
-                                    cursor: "pointer",
-                                }}>
-                                Register
-                            </MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink
-                                onClick={() => navigate(`/contactus`)}
-                                style={{
-                                    fontWeight: "bold",
-                                    color: "#ffffff",
-                                    cursor: "pointer",
-                                }}>
-                                Contact Us
-                            </MDBNavbarLink>
-                        </MDBNavbarItem>
-                        {/* <MDBNavbarItem>
-              <MDBNavbarLink onClick = {()=> navigate(`/aboutus`)} style={{fontWeight: 'bold', color: "#ffffff", cursor: "pointer"}}>About Us</MDBNavbarLink>
-            </MDBNavbarItem> */}
-                        <MDBNavbarItem>
-                            <MDBNavbarLink
-                                onClick={() => navigate(`/terms`)}
-                                style={{
-                                    fontWeight: "bold",
-                                    color: "#ffffff",
-                                    cursor: "pointer",
-                                }}>
-                                Terms
-                            </MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink
-                                onClick={() => navigate(`/privacypolicy`)}
-                                style={{
-                                    fontWeight: "bold",
-                                    color: "#ffffff",
-                                    cursor: "pointer",
-                                }}>
-                                Privacy Policy
-                            </MDBNavbarLink>
-                        </MDBNavbarItem>
-                    </MDBNavbarNav>
-                </MDBCollapse>
+                <MDBContainer onClick={() => navigate(`/`)} fluid>
+                    <span style={{ fontWeight: "bold", width: "100%", textAlign: "center", fontSize: "24px", color: "#fff" }}>Fingo</span>
+                </MDBContainer>
             </MDBContainer>
         </MDBNavbar>
     );
