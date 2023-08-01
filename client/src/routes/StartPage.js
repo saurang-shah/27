@@ -63,21 +63,34 @@ const StartPage = (props) => {
                         knowledge.
                     </h5>
                     <br />
+		    
                     <Button
-                        style={{
-                            width: "50%",
-                            backgroundColor: "#28a745",
-                            borderColor: "#28a745",
-                            marginLeft: "25%",
-                            padding: "15px",
-                            borderRadius: "15px",
-                            boxShadow: "0px 7px #1a5928",
-                        }}
-                        onClick={() => navigate("/auth/login")}>
-                        Get Started
-                    </Button>
-                </Col>
-            </Row>
+			  style={{
+			      width: "50%",
+			      backgroundColor: "#28a745",
+			      borderColor: "#28a745",
+			      marginLeft: "25%",
+			      padding: "15px",
+			      borderRadius: "15px",
+			      boxShadow: "0px 7px #1a5928",
+			      transition: "all 0.3s ease", // Smooth transition
+			  }}
+			  onMouseEnter={() => {
+			      // On mouse hover, change the style
+			      this.setState({
+			          hover: true,
+			      });
+			  }}
+			  onMouseLeave={() => {
+			      // On mouse leave, revert the style
+			      this.setState({
+			          hover: false,
+			      });
+			  }}
+			  onClick={() => navigate("/auth/login")}
+			>
+			  {this.state.hover ? "Hovered!" : "Get Started"}
+			</Button>
 
             {/* <Row style={{ margin: "auto", width: "80%"}}>
 			<Col> 
